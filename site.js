@@ -8,7 +8,7 @@ const cellImg = document.querySelector(".cell-img");
 const increaseCounter = () => {
   if (ionLevel < 10) {
     ionLevel++;
-    ionText.innerHTML = "Hydrogen ion level: " + ionLevel;
+    ionText.innerHTML = "Proton buildup level: " + ionLevel;
   }
   checkForHealthChange();
   placeProtons();

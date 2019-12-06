@@ -1,3 +1,3 @@
 # AcidosisAndAnaerobicThreshold
 
-Project demonstrating acidosis and anaerobic threshold :D
+Project demonstrating acidosis and anaerobic threshold

@@ -1,0 +1,98 @@
+* {
+  margin: none;
+  padding: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a3bded), to(#6991c7)) fixed;
+  background: linear-gradient(to top, #a3bded 0%, #6991c7 100%) fixed;
+}
+
+.title-text {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.action-container {
+  margin: 0 auto;
+  margin-top: -30px;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  max-width: 600px;
+  background: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  margin-bottom: 10%;
+  padding-bottom: 20%;
+}
+
+.action-container .btn {
+  margin-top: 10px;
+  color: white;
+}
+
+.action-container .btn:hover {
+  color: white;
+  -webkit-box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+}
+
+.action-container #increase-btn {
+  background-color: #bd1010;
+}
+
+.action-container #decrease-btn {
+  background-color: #12a804;
+}
+
+.action-container .cell-img-container {
+  margin-top: 30%;
+  position: absolute;
+}
+
+.action-container .cell-img-container .cell-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.action-container .levelIndicator {
+  position: absolute;
+  background-color: rgba(184, 34, 184, 0.75);
+  border-radius: 15px;
+  left: 50%;
+  margin-top: 5px;
+  padding: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.action-container .levelIndicator p {
+  color: white;
+  font-size: 20px;
+}
+
+.action-container .healthIndicator {
+  position: absolute;
+  background-color: rgba(39, 245, 12, 0.842);
+  border-radius: 15px;
+  left: 50%;
+  margin-top: 75px;
+  padding: 5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.action-container .healthIndicator p {
+  color: white;
+  font-size: 40px;
+}
+
+.action-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+/*# sourceMappingURL=style.css.map */

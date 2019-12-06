@@ -1,0 +1,92 @@
+$containerWidth: 600px;
+
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top, #a3bded 0%, #6991c7 100%) fixed;
+}
+
+.title-text {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.action-container {
+  margin: 0 auto;
+  margin-top: -30px;
+  transform: translateY(10%);
+  max-width: $containerWidth;
+  background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  margin-bottom: 10%;
+  padding-bottom: 20%;
+
+  .btn {
+    margin-top: 10px;
+    color: white;
+  }
+
+  .btn:hover {
+    color: white;
+    box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  #increase-btn {
+    background-color: rgb(189, 16, 16);
+  }
+
+  #decrease-btn {
+    background-color: rgb(18, 168, 4);
+  }
+
+  .cell-img-container {
+    margin-top: 30%;
+    position: absolute;
+
+    .cell-img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  //   Level Indicator
+  .levelIndicator {
+    position: absolute;
+    background-color: rgba(184, 34, 184, 0.75);
+    border-radius: 15px;
+    left: 50%;
+    margin-top: 5px;
+    padding: 5px;
+    transform: translateX(-50%);
+    p {
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .healthIndicator {
+    position: absolute;
+    background-color: rgba(39, 245, 12, 0.842);
+    border-radius: 15px;
+    left: 50%;
+    margin-top: 75px;
+    padding: 5px;
+    transform: translateX(-50%);
+    p {
+      color: white;
+      font-size: 40px;
+    }
+  }
+}
+
+// To create responsive square
+.action-container:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}

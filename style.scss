@@ -17,9 +17,18 @@ body {
   font-size: 2rem;
 }
 
+#code-btn {
+  background-color: rgb(37, 37, 37);
+  color: white;
+
+  &:hover {
+    box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
 .action-container {
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -60px;
   transform: translateY(10%);
   max-width: $containerWidth;
   background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);

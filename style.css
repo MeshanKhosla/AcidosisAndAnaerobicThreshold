@@ -17,9 +17,19 @@ body {
   font-size: 2rem;
 }
 
+#code-btn {
+  background-color: #252525;
+  color: white;
+}
+
+#code-btn:hover {
+  -webkit-box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+}
+
 .action-container {
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -60px;
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
   max-width: 600px;

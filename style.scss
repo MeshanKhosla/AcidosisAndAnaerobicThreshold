@@ -28,17 +28,20 @@ body {
 
 .action-container {
   margin: 0 auto;
-  margin-top: -60px;
+  margin-top: -180px;
   transform: translateY(10%);
   max-width: $containerWidth;
   background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   margin-bottom: 10%;
-  padding-bottom: 20%;
   border-radius: 15px;
 
   .btn {
+    position: sticky;
+    top: -180px;
+    margin-left: 80px;
     margin-top: 10px;
     color: white;
+    z-index: 5;
   }
 
   .btn:hover {
@@ -99,4 +102,12 @@ body {
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+
+#graph-img {
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 130%;
+  position: relative;
+  max-width: 50%;
 }

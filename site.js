@@ -4,11 +4,13 @@ const ionText = document.getElementById("ionLevelText");
 const healthText = document.getElementById("healthText");
 const healthBG = document.querySelector(".healthIndicator");
 const cellImg = document.querySelector(".cell-img");
+const graphImg = document.getElementById("graph-img");
 
 const increaseCounter = () => {
   if (ionLevel < 10) {
     ionLevel++;
     ionText.innerHTML = "Proton buildup level: " + ionLevel;
+    graphImg.setAttribute("src", "./Assets/Protons " + ionLevel + ".png");
   }
   checkForHealthChange();
   placeProtons();
@@ -62,7 +64,7 @@ const placeImg = (xVal, yVal) => {
 };
 
 let normalIncreaseValue = 3;
-let dangerousIncreaseValue = Math.pow(5, 2) + 2;
+let dangerousIncreaseValue = 27;
 
 const placeProtons = () => {
   if (ionLevel < 8) {

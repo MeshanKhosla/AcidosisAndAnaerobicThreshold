@@ -29,20 +29,24 @@ body {
 
 .action-container {
   margin: 0 auto;
-  margin-top: -60px;
+  margin-top: -180px;
   -webkit-transform: translateY(10%);
           transform: translateY(10%);
   max-width: 600px;
   background: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
   background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   margin-bottom: 10%;
-  padding-bottom: 20%;
   border-radius: 15px;
 }
 
 .action-container .btn {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -180px;
+  margin-left: 80px;
   margin-top: 10px;
   color: white;
+  z-index: 5;
 }
 
 .action-container .btn:hover {
@@ -105,5 +109,14 @@ body {
   content: "";
   display: block;
   padding-bottom: 100%;
+}
+
+#graph-img {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 130%;
+  position: relative;
+  max-width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

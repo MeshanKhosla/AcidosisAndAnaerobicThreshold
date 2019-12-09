@@ -20,6 +20,7 @@ const decreaseCounter = () => {
   if (ionLevel > 1) {
     ionLevel--;
     ionText.innerHTML = "Hydrogen ion level: " + ionLevel;
+    graphImg.setAttribute("src", "./Assets/Protons " + ionLevel + ".png");
   }
   checkForHealthChange();
   removeProtons();

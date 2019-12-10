@@ -17,32 +17,36 @@
   <body>
     <h2 class="title-text">Acidosis and Anaerobic Threshold</h2>
     <center>
-    <a href="https://github.com/MeshanKhosla/AcidosisAndAnaerobicThreshold" target="_blank"> <button id="code-btn" class="btn btn-lg">
-      View code
-    </button></a>
-  </center>
+      <a
+        href="https://github.com/MeshanKhosla/AcidosisAndAnaerobicThreshold"
+        target="_blank"
+      >
+        <button id="code-btn" class="btn btn-lg">
+          View code
+        </button></a
+      >
+    </center>
 
     <div class="action-container">
       <!-- <center> -->
-        <button id="decrease-btn" class="btn btn-lg" onclick="decreaseCounter()">
-          Decrease intensity
-        </button>
+      <!-- <button id="decrease-btn" class="btn btn-lg" onclick="decreaseCounter()">
+        Decrease intensity
+      </button>
 
-        <button id="increase-btn" class="btn btn-lg" onclick="increaseCounter()">
-          Increase intensity
-        </button>
+      <button id="increase-btn" class="btn btn-lg" onclick="increaseCounter()">
+        Increase intensity
+      </button> -->
       <!-- </center> -->
 
       <!-- Level indicator -->
       <div class="levelIndicator">
-          <p id="ionLevelText">Proton buildup level: 1</p>
+        <p id="ionLevelText">Proton buildup level: 1</p>
       </div>
 
       <!-- Health indicator -->
       <div class="healthIndicator">
-            <p id="healthText">Normal</p>
-        </div>
-
+        <p id="healthText">Normal</p>
+      </div>
 
       <div class="cell-img-container">
         <img
@@ -50,14 +54,41 @@
           src="./Assets/lactateCell.png"
           alt="Picture of Cell"
         />
-        </div>
-        <img  id="graph-img" src="./Assets/Protons 1.png" alt="Proton level graph">
+      </div>
+      <img
+        id="graph-img"
+        src="./Assets/Protons 1.png"
+        alt="Proton level graph"
+      />
+
+      <!-- Explanation text -->
+      <div class="explanation-text">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+          vitae itaque ducimus ex in cupiditate animi, aliquam beatae. Nesciunt
+          ratione mollitia tenetur pariatur possimus quam deleniti. Dolores enim
+          suscipit ex eveniet pariatur! Odit eaque voluptate quia, praesentium
+          quam veritatis consequatur qui officiis molestias neque, repellendus
+          blanditiis doloribus perferendis ad numquam.
+        </p>
+      </div>
+
+      <!-- Side buttons -->
+      <div class="side-buttons">
+        <button onclick="decreaseCounter()">
+          <div class="side-btn-increase">
+            <h1>-</h1>
+          </div>
+        </button>
+
+        <button onclick="increaseCounter()">
+          <div class="side-btn-decrease">
+            <h1>+</h1>
+          </div>
+        </button>
       </div>
     </div>
-
-
   </body>
-
 
   <script src="site.js"></script>
   <script

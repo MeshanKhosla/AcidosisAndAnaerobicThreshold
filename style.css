@@ -20,6 +20,7 @@ body {
 #code-btn {
   background-color: #252525;
   color: white;
+  margin-bottom: 50px;
 }
 
 #code-btn:hover {
@@ -37,30 +38,6 @@ body {
   background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   margin-bottom: 10%;
   border-radius: 15px;
-}
-
-.action-container .btn {
-  position: -webkit-sticky;
-  position: sticky;
-  top: -180px;
-  margin-left: 80px;
-  margin-top: 10px;
-  color: white;
-  z-index: 5;
-}
-
-.action-container .btn:hover {
-  color: white;
-  -webkit-box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
-          box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
-}
-
-.action-container #increase-btn {
-  background-color: #bd1010;
-}
-
-.action-container #decrease-btn {
-  background-color: #12a804;
 }
 
 .action-container .cell-img-container {
@@ -108,7 +85,7 @@ body {
 .action-container:after {
   content: "";
   display: block;
-  padding-bottom: 100%;
+  padding-bottom: 10%;
 }
 
 #graph-img {
@@ -118,5 +95,43 @@ body {
   margin-top: 130%;
   position: relative;
   max-width: 50%;
+}
+
+.side-buttons button {
+  background-color: #49b1fe;
+  color: #49b1fe;
+  border: none;
+}
+
+.side-buttons button h1 {
+  font-size: 20rem;
+  margin-top: 50%;
+  color: white;
+}
+
+.side-btn-increase {
+  background-color: #12a804;
+  position: fixed;
+  margin-top: -1000px;
+  float: left;
+  -webkit-transform: translateX(-102%);
+          transform: translateX(-102%);
+  height: 1000px;
+  width: 20vw;
+}
+
+.side-btn-decrease {
+  background-color: #bd1010;
+  position: fixed;
+  margin-top: -1000px;
+  margin-left: 96.5%;
+  height: 1000px;
+  width: 20vw;
+}
+
+.explanation-text p {
+  margin-top: 40px;
+  background-color: #64646491;
+  color: #ececec;
 }
 /*# sourceMappingURL=style.css.map */

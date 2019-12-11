@@ -26,38 +26,41 @@ const healthText = document.getElementById("healthText");
 const healthBG = document.querySelector(".healthIndicator");
 const cellImg = document.querySelector(".cell-img");
 const graphImg = document.getElementById("graph-img");
-const explanationText = document.querySelector(".explanation-text");
+const explanationText = document.querySelector(".explanation-text p");
 
 const increaseCounter = () => {
   if (ionLevel < 10) {
     ionLevel++;
     ionText.innerHTML = "Proton buildup level: " + ionLevel;
     graphImg.setAttribute("src", "./Assets/Protons " + ionLevel + ".png");
-
-    if (ionLevel == 1) {
-      explanationText.innerHTML = level1Text;
-    } else if (ionLevel == 2) {
-      explanationText.innerHTML = level2Text;
-    } else if (ionLevel == 3) {
-      explanationText.innerHTML = level3Text;
-    } else if (ionLevel == 4) {
-      explanationText.innerHTML = level4Text;
-    } else if (ionLevel == 5) {
-      explanationText.innerHTML = level5Text;
-    } else if (ionLevel == 6) {
-      explanationText.innerHTML = level6Text;
-    } else if (ionLevel == 7) {
-      explanationText.innerHTML = level7Text;
-    } else if (ionLevel == 8) {
-      explanationText.innerHTML = level8Text;
-    } else if (ionLevel == 9) {
-      explanationText.innerHTML = level9Text;
-    } else if (ionLevel == 10) {
-      explanationText.innerHTML = level10Text;
-    }
+    updateExplanation();
   }
   checkForHealthChange();
   placeProtons();
+};
+
+const updateExplanation = () => {
+  if (ionLevel == 1) {
+    explanationText.innerHTML = level1Text;
+  } else if (ionLevel == 2) {
+    explanationText.innerHTML = level2Text;
+  } else if (ionLevel == 3) {
+    explanationText.innerHTML = level3Text;
+  } else if (ionLevel == 4) {
+    explanationText.innerHTML = level4Text;
+  } else if (ionLevel == 5) {
+    explanationText.innerHTML = level5Text;
+  } else if (ionLevel == 6) {
+    explanationText.innerHTML = level6Text;
+  } else if (ionLevel == 7) {
+    explanationText.innerHTML = level7Text;
+  } else if (ionLevel == 8) {
+    explanationText.innerHTML = level8Text;
+  } else if (ionLevel == 9) {
+    explanationText.innerHTML = level9Text;
+  } else if (ionLevel == 10) {
+    explanationText.innerHTML = level10Text;
+  }
 };
 
 const decreaseCounter = () => {
@@ -146,6 +149,7 @@ const placeProtons = () => {
 // Decrease Intensity
 const removeProtons = () => {
   let child = document.body.lastElementChild;
+  console.log(child);
   while (child) {
     document.body.removeChild(child);
     child = document.lastElementChild;

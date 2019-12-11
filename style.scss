@@ -29,34 +29,12 @@ body {
 
 .action-container {
   margin: 0 auto;
-  margin-top: -180px;
+  margin-top: -100px;
   transform: translateY(10%);
   max-width: $containerWidth;
   background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  margin-bottom: 10%;
+  margin-bottom: 150px;
   border-radius: 15px;
-
-  // .btn {
-  //   position: sticky;
-  //   top: -180px;
-  //   margin-left: 80px;
-  //   margin-top: 10px;
-  //   color: white;
-  //   z-index: 5;
-  // }
-
-  // .btn:hover {
-  //   color: white;
-  //   box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
-  // }
-
-  // #increase-btn {
-  //   background-color: rgb(189, 16, 16);
-  // }
-
-  // #decrease-btn {
-  //   background-color: rgb(18, 168, 4);
-  // }
 
   .cell-img-container {
     margin-top: 30%;
@@ -133,6 +111,10 @@ body {
   transform: translateX(-102%);
   height: 1000px;
   width: 20vw;
+
+  &:hover {
+    box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .side-btn-decrease {
@@ -142,10 +124,15 @@ body {
   margin-left: 96.5%;
   height: 1000px;
   width: 20vw;
+
+  &:hover {
+    box-shadow: -2px 9px 33px 0px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .explanation-text p {
   margin-top: 40px;
   background-color: #64646491;
   color: rgb(236, 236, 236);
+  text-align: center;
 }

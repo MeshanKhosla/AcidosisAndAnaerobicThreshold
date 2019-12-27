@@ -1,3 +1,4 @@
+// Explanation texts
 let level1Text =
   "This is a normal proton buildup level. Not much activity is being done and the muscles are at rest.";
 let level2Text =
@@ -28,6 +29,7 @@ const cellImg = document.querySelector(".cell-img");
 const graphImg = document.getElementById("graph-img");
 const explanationText = document.querySelector(".explanation-text p");
 
+// When + is pressed
 const increaseCounter = () => {
   if (ionLevel < 10) {
     ionLevel++;
@@ -63,11 +65,13 @@ const updateExplanation = () => {
   }
 };
 
+// When - is pressed
 const decreaseCounter = () => {
   if (ionLevel > 1) {
     ionLevel--;
     ionText.innerHTML = "Hydrogen ion level: " + ionLevel;
     graphImg.setAttribute("src", "./Assets/Protons " + ionLevel + ".png");
+    updateExplanation();
   }
   checkForHealthChange();
   removeProtons();
@@ -101,6 +105,7 @@ const lowerBoundY =
 const upperBoundY = lowerBoundY + imgHeight - 150;
 let y;
 let img;
+// Generates DOM img
 const placeImg = (xVal, yVal) => {
   img = document.createElement("img");
   img.setAttribute("style", "position: absolute;");
